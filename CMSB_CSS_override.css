@@ -1,0 +1,31 @@
+body{
+	background-color:#fff;
+	color:#000;
+	background-image:none;
+	padding:5px 15px;
+	}
+.CMSBSlideshow{
+	border:1px dashed darkblue;
+	padding:15 10px;
+	background-color:whitesmoke;
+	position:relative;
+	}
+.CMSBSlideshow:before{
+	content: "slideshow";
+	position:absolute;
+	top:0px;
+	left:10px;
+	font-size:11px;
+	color:#666;
+	text-decoration:underline;
+	}
+div{
+	border:1px dotted #bbb;
+	padding:2px;
+	min-height:16px;
+	min-width:25px;
+	}
+table td{
+	border:1px dotted darkred;
+	padding:2px;
+	}

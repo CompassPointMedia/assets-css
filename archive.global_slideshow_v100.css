@@ -1,0 +1,34 @@
+#ssWrap{
+	/* wrapper for the entire slide show */
+}
+#ssContent{
+	position:relative;
+}
+#ly2{	z-index:2; }
+#ly1{	z-index:1; }
+#ly2, #ly1{
+	position:absolute;
+	/** width and height declared dynamically **/
+}
+#pictureTitles{
+	/* this is where the text for the slides is stored */
+	display:none;
+}
+
+/*
+The remaining can be configured as desired
+*/
+.redbutton{
+	}
+.greenbutton{
+	}
+#ssbody{
+	}
+#topText{
+	}
+#topTextWait{
+	}
+#pictureTextHTML{
+	}
+#pictureTextText{
+	}

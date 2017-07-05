@@ -1,0 +1,218 @@
+/* 
+---- 2012-02-09: see myform styling and for labels - only color needs to be changed
+---- 2010-04-07: standardReport copied over - really about the same as data1 but will grow to handle leveled headers and subtotals, grand totals, and a best-effort scheme for the overall header and footer etc.
+---- 2010-04-04: data1 and data901 copied over from GiocosaCare and to be weeded out or gelled into something useful; probably I want this to become the most simple table layout, and have another one for reports (for the dataset object)
+---- 2010-12-04: collapsed logs_casemanager and logs_clinical from data2->data1..
+*/
+table.data1{
+	border-collapse:collapse;
+	border:1px solid #333; *
+	}
+.data1 thead{
+	background-color:GOLD;
+	}
+.data1 th{
+	background-color:#CCC;
+	text-align:left;
+	padding:2px 4px 2px 8px;
+	}
+.data1 td{
+	padding:2px 4px 2px 8px;
+	border-bottom:1px solid #999;
+	}
+.data1 .alt td{
+	background-color:#f0f0f0;
+	}
+
+
+.data901{
+	border-collapse:collapse;
+	border:1px solid #333;
+	}
+.data901 td.col{
+	font-weight:900;
+	background-color:#CCC;
+	}
+.data901 td{
+	padding:3px 10px 1px 4px;
+	}
+.data901 tbody{
+	margin-top:50px;
+	}
+
+.spacer td, .spacer th{
+	padding:0px 4px 0px 8px;
+	}
+
+
+
+/* 2009-09-01: complexData developed as a fairly solid and really good way to present data with cross betw. highlight and col highlight */
+/* ------------ colors abstracted ----------- */
+.complexData a{
+	color:#000; /*normally this is desired*/
+	}
+.complexData thead{						/* header, non-sorted */
+	background-color:#9ea9b4;
+	}
+.complexData th{
+	color:#FFF;
+	}
+.complexData th.sorted{					/* header, sorted */
+	background-color:#7c8ea4;
+	background-image:url("/images/i/arrows/wht-arrow-sm-dn.png");
+	background-position:center right;
+	background-repeat:no-repeat;
+	}
+.complexData th.sortedasc{					/* header, sorted ascending */
+	background-color:#7c8ea4;
+	background-image:url("/images/i/arrows/wht-arrow-sm-dn.png");
+	background-position:center right;
+	background-repeat:no-repeat;
+	}
+.complexData th.sorteddesc{					/* header, sorted descending */
+	background-color:#7c8ea4;
+	background-image:url("/images/i/arrows/wht-arrow-sm-up.png");
+	background-position:center right;
+	background-repeat:no-repeat;
+	}
+.colOptionsAnchor{
+	width:15px;
+	height:15px;
+	cursor:pointer;
+	background-image:url("/images/i/cols.gif");
+	background-position:0px 4px;
+	background-repeat:no-repeat;
+	padding:0px;
+	}
+.colOptionsAnchor:hover{
+	text-decoration:none;
+	}
+.colOptVisible{
+	padding-left:25px;
+	background-image:url("/images/i/check1.png");
+	background-position:0px 2px;
+	background-repeat:no-repeat;
+	}
+.colOptHidden{
+	padding-left:25px;
+	}
+
+.complexData tr{						/* row, normal color (default white) */
+	}
+.complexData tr.alt{					/* row, alt color */
+	background-color:#eaeafa;
+	}
+.complexData tr.alt td.sorted{			/* row-alt, col-sorted */
+	background-color:#c8d5f1;
+	}
+.complexData td.sorted{					/* row-normal, col-sorted */
+	background-color:#dae8f6;
+	}
+.complexData td.activetoggle{
+	background-color:#CCC;
+	padding-left:3px;
+	padding-right:3px;
+	width:24px;
+	}
+.complexData th.activetoggle{
+	background-color:#666;
+	}
+/* --- removed 2010-11-29
+.hlrow td{							/* h() with new className change *
+	background-color:#aaaaf6;
+	}
+.hlrow td.sorted{
+	background-color:#919bf6;		/* highlight-sorted (but can't differentiate :( *
+	}
+*/
+
+.complexData th{
+	border-bottom:1px solid #000;
+	}
+/* ----------- end colors ----------------  */
+.complexData{
+	border-collapse:collapse;
+	width:100%;
+	clear:both;
+	}
+.complexData td{
+	padding:3px 4px 1px 7px;
+	cursor:pointer;
+	font-size:13px;
+	background-image:url("/images/i/grad/linedottedhoriz-444.png");
+	background-position:bottom;
+	background-repeat:repeat-x;
+	}
+.complexData th.last{
+	padding-right:0px;
+	}
+.complexData th.last a{
+	padding-right:0px;
+	}
+.complexData td.last{
+	padding-right:20px;
+	}
+.complexData td{
+	padding:3px 4px 1px 5px;
+	cursor:pointer;
+	font-size:13px;
+	background-image:url("/images/i/grad/linedottedhoriz-444.png");
+	background-position:bottom;
+	background-repeat:repeat-x;
+	}
+.complexData th{
+	color:#FFF;
+	font-size:109%;
+	font-weight:400;
+	padding:7px 4px 1px 5px;
+	}
+.complexData th a{
+	color:#FFF;
+	}
+.complexData .activetoggle{
+	text-align:center;
+	}
+
+.standardReport{
+	border-collapse:collapse;
+	}
+.standardReport th, .standardReport td{
+	padding:3px 5px 1px 4px;
+	}
+.standardReport td{
+	}
+	
+
+/* 2012-02-09: new form goodies starting from scratch */
+label:hover{
+	cursor:pointer;
+	border:1px dotted #777;
+	}
+label{
+	border:1px solid transparent;
+	padding:1px 3px;
+	}
+/* much more readable form style */
+input.myform, textarea.myform, select.myform { 
+	padding: 5px 10px; border-width: 2px; border-style: solid; background-color: #ffffff; font-size: 14px;
+	margin-top:2px;
+}
+input.myform, textarea.myform, select.myform {
+	border-color: #99BD0C;
+	}
+input.myform:focus, textarea.myform:focus, select.myform:focus { 
+	border-color: #de8800 
+	}
+input[type="submit"].myform{
+	background-color: #6D8709;
+	color: #FFFFFF;
+	}
+input[disabled].myform, textarea[disabled].myform, select[disabled].myform{
+	border-color:#ccc;
+	background-image:url("/images/i-local/barberpole-ltgray.png");
+	
+	}
+.dataobjectHeading td{
+	cursor:auto;
+	background-image:none;
+	}

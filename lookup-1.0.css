@@ -1,0 +1,82 @@
+/* 2012-11-04: developed to have a standard lookup box */
+#ajxlistOfOptions{
+	position:absolute;	/* Never change this one */
+	width:225px;	/* Width of box */
+	height:250px;	/* Height of box */
+	overflow:auto;	/* Scrolling features */
+	border:1px solid #317082;	/* Dark green border */
+	background-color:#FFF;	/* White background color */
+	text-align:left;
+	font-size:0.9em;
+	z-index:100;
+}
+#ajxlistOfOptions div{	/* General rule for both .optionDiv and .optionDivSelected */
+	margin:0px;		
+	padding:1px;
+	cursor:pointer;
+	/* font-size:0.9em; */
+}
+#ajxlistOfOptions .optionDiv{	/* Div for each item in list */
+	
+}
+#ajxlistOfOptions .optionDivSelected{ /* Selected item in the list */
+	background-color:#3A4E97;
+	color:#FFF;
+}
+#ajxlistOfOptions .optionDivSelected .highlighted{
+	background-color:#5667a5;
+	font-weight:900;
+	color:#fff;
+}
+#ajxlistOfOptions .optionDiv .highlighted{
+	background-color:#d9deea;
+	font-weight:900;
+}
+#ajxlistOfOptions_iframe{
+	background-color:#F00;
+	position:absolute;
+	z-index:5;
+}
+.highlighted{
+	background-color:aliceblue;
+	color:#444;
+	}
+
+.cancellableItem{
+	float:left;
+	border:1px solid #999;
+	padding:4px;
+	background-color:#d9deea;
+	margin-right:5px;
+	}
+.cancel{
+	float:right;
+	cursor:pointer;
+	background-color:darkblue;
+	color:white;
+	padding:2px;
+	margin:-2px -2px -2px 5px;
+	}
+.cancellableItem, .cancel{
+	-moz-border-radius:4px;
+	}
+	
+#addItem{
+	position:absolute;
+	border:1px solid darkblue;
+	padding:7px;
+	width:500px;
+	height:250px;
+	background-color:white;
+	}
+#lookupBox{
+	width:450px;
+	border:1px solid darkblue;
+	padding:5px;
+	}
+#lookupLegend{
+	clear:both;
+	background-color:#e5e5e5;
+	padding:4px;
+	margin-top:4px;
+	}

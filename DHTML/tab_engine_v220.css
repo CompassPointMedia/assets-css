@@ -1,0 +1,146 @@
+/***
+2008-01-22
+----------
+3.01 is a slight improvement, just more comments and an EXAMPLE of page-specific css coding at bottom
+
+2007-02-18
+----------
+Tabbed interface CSS version 3.0: major revision is incorporating @media print into the declaration.  Also, each active area (aArea) is also set to either tShow or tHide, i.e. class="aArea tShow", etc..
+INSTRUCTIONS FOR THE PAGE:
+--------------------------
+1. In the head local style, you must declare the width and height (use min- prefix recommended) for each aArea
+2. Each tab must be set to class="aArea tShow" or class="aArea tHide"
+3. Make sure you use the corresponding 3.0 version of the php dynamic include
+
+For tabbed interfaces. Modified 2005-10-06.  To change background color change it in .objectWrapper only.  Font size directly in the tabs is 11px Arial, in .bc_ and .xbc_
+***/
+
+/* ----------- all layer specifications are for screen media only -------------- */
+@media screen{
+	/* wrapper for the object - use padding or margins and desired, background-color etc. */
+	.objectWrapper{
+		padding:7px 7px 15px 15px;
+		}
+	/* may desire to remove padding for ease in adding up tab body width vs. tabset width */
+	.aArea{
+		padding:15px 5px 10px 10px;
+		border-left:1px solid #FFF;
+		border-bottom:2px solid #333;
+		border-right:2px solid #333;
+		}
+	.aAreaTitle{
+		display:none;
+		}
+	.tShow{
+		display:block;
+		}
+	.tHide{
+		display:none;
+		}
+	#propertiesCtrl{ padding: 4px 0px 0px 4px; }
+	/* -- this is the "brother" span to in input - hidden on screen -- */
+	.pd{
+		display:none;
+		}
+	.ib{
+		cursor:pointer;
+		font-family:Trebuchet MS;
+		font-size:109%;
+		border-bottom:1px solid white;
+		padding:0px 5px 0px 5px;
+		margin:0px 1px;
+		}
+	.ab{
+		cursor:pointer;
+		font-family:Trebuchet MS;
+		font-size:109%;
+		border:1px solid white;
+		border-bottom:none;
+		padding:1px 5px 4px 5px;
+		background-color:gold;
+		}
+	.tabs{
+		margin-top:20px;
+		}
+	.tabs td{
+		vertical-align:bottom;
+		}
+	.helpinset{
+		width:95%;
+		min-height:300px;
+		max-height:550px;
+		margin-top:8px;
+		padding:5px 15px;
+		background-color:OLDLACE;
+		border:1px dotted DARKRED;
+		}
+	.rightUnderline{
+		width:100px;
+		}
+}
+/* --------------- print media call -------------------- */
+@media print{
+	body, .objectWrapper{
+		background-color:#FFF;
+		}
+	/* aArea is neutral for print (no borders etc.) */
+	.aArea{
+		}
+	/* for forms: show the "brother" span which gets filled with the input or field contents */
+	.pd{
+		display:inline;
+		}
+	.nothingPresent{
+		display:none;
+		}
+	/* ----- this functions as the "tab" when printing - doesn't show on screen ------- */
+	.aAreaTitle{
+		font-size:179%;
+		}
+	/* ----- this allows scrollable overflow divs to expand for print ------ */
+	.overflowInset110{
+		border:none;
+		overflow:visible;
+		width:auto;
+		height:auto;
+		}
+	.rightUnderline{
+		display:none;
+		}
+}
+
+
+
+/* EXAMPLE -----------------
+
+/* --------------- SPECIFIC screen and print settings to be used for the page -------------------- ~/
+@media screen{
+	/* color the object as needed ~/
+	body, .objectWrapper{
+		background-color:#CCC;
+	}
+	/* size the tab bodies for screen display as needed ~/
+	#progressReports_fullReport, #progressReports_tActivityLog, #progressReports_medicalDental, #progressReports_tSections, #progressReports_help{
+		height:350px;
+		width:691px;
+		}
+}
+@media print{
+	/* show tab bodies ~/
+	#progressReports_fullReport, #progressReports_tActivityLog, #progressReports_tmedicalDental{
+		display:block;
+		height:auto;
+		width:850px;
+		margin-bottom:25px;
+		border:none;
+		font-size:10px;
+		}
+	#progressReports_tActivityLog, #progressReports_medicalDental{
+		page-break-before:always;
+		}
+	/* hide entry tabs and controls ~/
+	input, #tabs, #progressReports_tSections, #progressReports_help{
+		display:none;
+		}
+}
+*/
