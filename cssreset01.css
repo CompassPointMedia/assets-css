@@ -10,6 +10,7 @@
 	height:1px;
 	position:relative;
 	}
+
 ._linkAnchor a{
 	position:absolute;
 	top:0px;
@@ -75,8 +76,6 @@ legend{	padding:0px 6px; }
 
 /* most commonly used font and size for my sites */
 body,input,textarea,td{
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:13px;
 	}
 
 /* good starting size and margin-pad for headings */
@@ -220,11 +219,7 @@ input[disabled], textarea[disabled], select[disabled]{
 .big,big { font-size: 15px; }
 .small,small { font-size: 11px; }
 .tiny { font-size: 8px; }
-/* added 2011-04-28: best appearance */
-h1,h2,h3,h4,h5,h6{ font-family:Georgia, "Times New Roman", Times, serif; }
 
-.monospace,var,code,pre { font-family: courier new, courier, monospace, serif; }
-.serif,cite,blockquote { font-family: palatino, georgia, times, times new roman, serif; }
 abbr,acronym{border-bottom:1px dotted;cursor:help;font-variant:small-caps}
 
 blockquote { border-top: 1px #ccc dotted; border-bottom: 1px #ccc dotted; text-align: justify; margin: 20px; padding: 0 10px; }
