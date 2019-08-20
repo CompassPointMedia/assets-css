@@ -4,6 +4,13 @@
 
 	cssreset01.css - incorporates coding from http://boldperspective.com/reset/bpstyle.uncompressed.css
 */
+body{
+	font-family: "helvetica-neue-light", Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 200;
+}
+*{
+	box-sizing: border-box;
+}
 ._linkAnchor{
 	float:left;
 	width:1px;
