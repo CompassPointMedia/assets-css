@@ -9,7 +9,7 @@
 	width:1px;
 	height:1px;
 	position:relative;
-	}
+}
 
 ._linkAnchor a{
 	position:absolute;
@@ -23,11 +23,11 @@
 	border-radius:3px;
 	border:1px solid rgba(255,255,255,.75);
 	font-size:12px;
-	}
+}
 ._linkAnchor a:hover{
 	background-color:rgba(0,0,0,.75);
 	text-decoration:none;
-	}
+}
 div:after {
 	clear:both;
 	visibility:hidden;
@@ -38,7 +38,7 @@ div:after {
 	padding:0px;
 	font-size:0px;
 	line-height:0px;
-	}
+}
 
 a { text-decoration:none }
 a:hover{ text-decoration:underline;	}
@@ -46,12 +46,12 @@ ul { list-style:disc inside none; }
 ul { margin-left:15px; }
 
 @media screen{
-.printhide{/* display:inherit; */}
-.screenhide{display:none;}
+	.printhide{/* display:inherit; */}
+	.screenhide{display:none;}
 }
 @media print{
-.printhide{display:none;}
-.screenhide{/* display:inherit; */}
+	.printhide{display:none;}
+	.screenhide{/* display:inherit; */}
 }
 
 
@@ -76,7 +76,7 @@ legend{	padding:0px 6px; }
 
 /* most commonly used font and size for my sites */
 body,input,textarea,td{
-	}
+}
 
 /* good starting size and margin-pad for headings */
 h1{	margin:16px 0px 10px 0px; font-size:24px; }
@@ -99,18 +99,18 @@ h4{ margin:4px 0px 0px 0px; font-size:15px; }
 .nullTop{
 	margin-top:0px;
 	padding-top:0px;
-	}
+}
 .nullBottom{
 	margin-bottom:0px;
 	padding-bottom:0px;
-	}
+}
 label{
 	/* normally this is needed */
 	cursor:pointer;
-	}
+}
 .gray{
 	color:#777;
-	}
+}
 /* Global/General Styles */
 body { -webkit-tap-highlight-color: rgb(255,255,0); margin: 0px; }
 a { -webkit-transition: color .3s linear; -o-transition: color .3s linear; -moz-transition: color .3s linear; text-decoration: none; }
@@ -125,15 +125,15 @@ ul { padding: 0; }
 /* SF/2013-10-16; this code will create 1.a.i structure similar perh. to a legal document.. */
 ol > li > ol{
 	list-style-type:lower-alpha;
-	}
+}
 ol > li > ol > li > ol{
 	list-style-type:lower-roman;
-	}
+}
 /* a heading at the start of a <li> normally wants to be inline.. */
 li h1:first-child, li h2:first-child, li h3:first-child, li h4:first-child{
 	display:inline;
 	font-family:inherit;
-	}
+}
 
 /* this interesting code comes from krencl, 
 1
@@ -167,45 +167,45 @@ li > ol > li:before {
 label:hover{
 	cursor:pointer;
 	border:1px dotted #777;
-	}
+}
 label{
 	border:1px solid transparent;
 	padding:1px 3px;
-	}
+}
 /* much more readable form style */
-input, textarea, select { 
+input, textarea, select {
 	padding: 5px 10px; border-width: 1px; border-style: solid; background-color: #ffffff; font-size: 14px; margin-top:2px;
-	}
+}
 input, textarea, select{
 	border-color:midnightblue;
-	}
-input[type="text"]:focus, input[type="password"]:focus, textarea:focus, select:focus { 
+}
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
 	border-color: #de8800;
-	}
+}
 input[type="submit"], input[type="button"], input[type="file"]{
-	padding:2px 8px; 
-	margin-top:2px; 
+	padding:2px 8px;
+	margin-top:2px;
 	border-radius:3px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: midnightblue;
-	background-image:url('/images/i/grad/stdbuttongrad2.png'); 
-	background-repeat:repeat-x; 
-	background-position:center; 
-	background-color:teal;	
-	}
+	border-style: solid;
+	border-width: 1px;
+	border-color: midnightblue;
+	background-image:url('/images/i/grad/stdbuttongrad2.png');
+	background-repeat:repeat-x;
+	background-position:center;
+	background-color:teal;
+}
 input[type="button"]:hover, input[type="button"]:focus, input[type="submit"]:hover, input[type="submit"]:focus{
 	background-color:#F7DB99;
 	cursor:pointer;
-	}
+}
 input[disabled], textarea[disabled], select[disabled]{
 	border-color:#aaa;
 	background-color:whitesmoke;
-	}
+}
 .minimal{
 	border-width:1px;
 	padding:0px;
-	}
+}
 
 /* input,textarea { border: 1px #aaa solid; padding: 10px; outline: none; } */
 
@@ -231,40 +231,40 @@ blockquote p { margin: 5px 0; }
 	background-color:whitesmoke;
 	font-family:"Courier New", Courier, monospace;
 	padding:0px 4px;
-	}
+}
 .red{
 	color:darkred;
-	}
+}
 p.dropCap:first-line {
-    line-height: 1em;
-	}
+	line-height: 1em;
+}
 p.dropCap:first-letter {
-    float: left;
-    font-size: 3em;
-    padding: 0 4px 2px 0;
+	float: left;
+	font-size: 3em;
+	padding: 0 4px 2px 0;
 	font-family:Georgia, "Times New Roman", Times, serif;
-	}
+}
 /* http://webdesign.about.com/od/advancedcss/a/aa090307.htm */
 p.raisedCap:first-letter {
 	font-size: 3em;
-	}
+}
 p.raisedCap:first-line {
 	line-height: 1em;
-	}
+}
 p.adjacentCap{
 	text-indent: -2.5em;
 	margin-left: 3em;
-	}
+}
 p.adjacentCap:first-letter{
 	font-size: 3em;
 	font-family:Georgia, "Times New Roman", Times, serif;
-	}
+}
 p.adjacentCap:first-line{
 	line-height: 100%;
-	}
+}
 textarea.tabby:focus{
 	border-style:dotted;
-	}
+}
 
 #showTester{
 	cursor:pointer;
@@ -272,13 +272,13 @@ textarea.tabby:focus{
 	width:5px;
 	height:5px;
 	font-size:5px;
-	}
+}
 #tester{
 	display:none;
 	background-color:#8A9887;
 	border:1px solid #000;
 	padding:5px;
-	}
+}
 /* 2013-01-22: generic for different tag types */
 .plain{
 	list-style:none;
@@ -286,4 +286,4 @@ textarea.tabby:focus{
 	margin:0px;
 	font-style:normal;
 	color:inherit;
-	}
+}
