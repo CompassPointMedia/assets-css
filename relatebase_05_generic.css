@@ -1,145 +1,152 @@
 /*
 css layout template for relatebase_05_generic.php template
-2019-08-19
-    * began cleanup - this will all go away but let's start with something that prevents insanity..
-2011-12-09
+2011-12-09 
 	* added "initial identification borders and 2px margins to key divs so that I can find things
-	*
+	* 
+
+
 */
 body{
-	font-family: "helvetica-neue-light", Helvetica Neue, Helvetica, Arial, sans-serif;
-	font-weight: 200;
-}
-*{
-	box-sizing: border-box;
-}
-
+	background-color:ivory;
+	padding-top:40px;
+	}
 body a{
-	color: #556B2F;
-}
+	color:#556B2F; /*darkolivegreen*/
+	}
+body a:hover{
+	}
 
 /* ---------- begin main regions for the template ------------ */
 #mainWrap{
-	width: 848px;
-	margin: 30px auto;
-	border: 1px solid darkblue;
-}
-#mainWrapSub{
-}
-#topRegion{
-	min-height: 125px;
+	width:848px;
+	margin:35px auto;
 	/* for initial identification */
-	border: 1px solid green;
-	margin: 2px;
-}
+	border:1px solid blue;
+	}
+#mainWrapSub{
+	}
+#topRegion{
+	min-height:125px;
+	/* for initial identification */
+	border:1px solid green;
+	margin:2px;
+	}
 #topRegion a{
-}
+	}
 #topRegion a:hover{
-}
+	}
 #topRegionLogo{
-	height: 200px;
-}
+	height:200px;
+	}
 #topRegionSlogan{
+	/*
+	background-image:url(/images/assets/slogan.png);
+	background-repeat:no-repeat;
+	height:20px;
+	margin-left:15px;
+	*/
 }
 #topRegionCtrl{
-	min-width: 100px;
-	min-height: 40px;
-	margin: 2px;
-	position: absolute;
-	top: -60px;
-	right: 5px;
-	float: right;
-}
+	min-width:100px;
+	min-height:40px;
+	margin:2px;
+	position:absolute;
+	top:-60px;
+	right:5px;
+	float:right;
+	}
 #topRegionSNW{
-}
+	}
 #SNWBackground{
-}
+	}
 #topRegionNav{
-	position: absolute;
-	top: 65px;
-	left: 30px;
+	position:absolute;
+	top:65px;
+	left:30px;
 	/* for initial identification */
-	border: 1px dotted #ccc;
-	margin: 2px;
-}
+	border:1px dotted #ccc;
+	margin:2px;
+	}
 #mainRegionSubLayer{
-}
+	}
 #mainRegion{
-	min-height: 150px;
+	min-height:150px;
 	/* for initial identification */
-	border: 1px solid green;
-	margin: 2px;
-}
+	border:1px solid green;
+	margin:2px;
+	}
 #mainRegion a{
-}
+	}
+#mainRegion a:hover{
+	}
 #mainRegionIntro{
 	/* for initial identification */
-	border: 1px solid chocolate;
-	margin: 2px;
-}
+	border:1px solid chocolate;
+	margin:2px;
+	}
 #mainRegionLeft{
-	float: left;
-	width: 295px;
-	position: relative;
-	min-height: 350px;
+	float:left;
+	width:295px;
+	position:relative;
+	min-height:350px;
 	/* for initial identification */
-	border: 1px solid chocolate;
-	margin: 2px;
-}
+	border:1px solid chocolate;
+	margin:2px;
+	}
 #mainRegionLeftIntro{
 	/* for initial identification */
-	border: 1px dotted #333;
-	margin: 2px;
-}
+	border:1px dotted #333;
+	margin:2px;
+	}
 #mainRegionLeftContent{
-}
+	}
 #mainRegionCenter{
-	float: left;
-	min-height: 350px;
-	width: 500px;
+	float:left;
+	min-height:350px;
+	width:500px;
 	/* for initial identification */
-	border: 1px solid chocolate;
-	margin: 2px;
-}
+	border:1px solid chocolate;
+	margin:2px;
+	}
 #mainRegionCenterIntro{
-	display: none;
-}
+	display:none;
+	}
 #mainRegionCenterContent{
-	padding: 25px;
-}
+	padding:25px;
+	}
 #mainRegionCenterContentInset{
-	float: right;
-	width: 250px;
-	padding-left: 20px;
-}
+	float:right;
+	width:250px;
+	padding-left:20px;
+	}
 #bottomRegion{
-	background: #98988f;
-}
+	background:#98988f;
+	}
 #bottomRegion a{
-}
+	}
 #bottomRegion a:hover{
-}
+	}
 #footer{
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;
-	color: #555;
-	padding: 5px 50px;
-}
+	width:900px;
+	margin:0px auto;
+	text-align:center;
+	color:#555;
+	padding:5px 50px;
+	}
 #footer a{
-	color: beige;
-}
+	color:beige;
+	}
 /* ---------------- end main regions ---------------------- */
 
 
 
 #topRegion ul, #mainRegionLeft ul{
-	list-style: none inside none;
-}
+	list-style:none inside none;
+	}
 #topRegion li{
-	display: inline;
-	padding: 2px 5px;
-}
+	display:inline;
+	padding:2px 5px;
+	}
 
 
 
@@ -154,86 +161,87 @@ body a{
 
 /* ---------- these elements are abs. positioned and outside HTML flow ----------- */
 #pushBg{
-	position: absolute;
-	left: 25px;
-	top: 25px; /* -- dim.A -- */
-	filter: alpha(opacity=62);
-	-moz-opacity: .62;
-	opacity: .62;
-	width: 806px;
-	min-height: 200px;
-	padding: 10px 20px;
-	background-color: #688a0f;
-}
+	position:absolute;
+	left:25px;
+	top:25px; /* -- dim.A -- */
+	filter:alpha(opacity=62);
+	-moz-opacity:.62;
+	opacity:.62;
+	width:806px;
+	min-height:200px;
+	padding:10px 20px;
+	background-color:#688a0f;
+	}
 #push{
-	position: absolute;
-	z-index: 100;
-	left: 0px;
-	top: 0px;
-	width: 898px;
-}
+	position:absolute;
+	z-index:100;
+	left:0px;
+	top:0px;
+	width:898px;
+	}
 #ppad{
-	padding: 25px; /* -- dim.A -- */
-}
+	padding:25px; /* -- dim.A -- */
+	}
 .cal10 td{
-	border: 1px solid black;
-	border-collapse: collapse;
-
+	border:1px solid black;
+	border-collapse:collapse;
+	
 }
 #calGrid{
-	padding: 0px;
-}
+	padding:0px;
+	}
 .today{
-	background-color: gray;
-}
+	background-color:gray;
+	}
 .noday{
-	background-color: teal;
-}
+	background-color:teal;
+	}
 /* ----------- for admin mode toolbar ----------- */
 #adminMode{
-	background-color: #777;
-	border: 1px solid #000;
-	padding: 0px 5px;
-	color: WHITE;
-	font-family: Arial;
-	position: fixed;
-	top: 15px;
-	left: 15px;
-	text-align: left;
-	width: 275px;
-	-moz-opacity: .85;
-}
+	background-color:#777;
+	border:1px solid #000;
+	padding:0px 5px;
+	color:WHITE;
+	font-family:Arial;
+	position:fixed;
+	top:15px;
+	left:15px;
+	text-align:left;
+	width:275px;
+	-moz-opacity:.85;
+	}
 #adminModeExit{
-	float: right;
-	padding: 0px 2px;
-	margin: 1px;
-	border: 1px solid WHITE;
-	font-weight: 900;
-	font-family: Arial;
-}
+	float:right;
+	padding:0px 2px;
+	margin:1px;
+	border:1px solid WHITE;
+	font-weight:900;
+	font-family:Arial;
+	}
 #adminModeExit a{
-	color: #FFF;
-	text-align: center;
-	font-size: 9px;
-}
+	color:#FFF;
+	text-align:center;
+	font-size:9px;
+	}
 .amBtn{
-	float: right;
-	padding: 0px 2px;
-	margin: 1px;
-	border: 1px solid WHITE;
-	font-weight: 900;
-	font-family: Arial;
-}
+	float:right;
+	padding:0px 2px;
+	margin:1px;
+	border:1px solid WHITE;
+	font-weight:900;
+	font-family:Arial;
+	}
 .amBtn a{
-	color: #FFF;
-	text-align: center;
-	font-size: 9px;
-	font-weight: 900;
-	padding: 0px 3px;
-}
+	color:#FFF;
+	text-align:center;
+	font-size:9px;
+	font-weight:900;
+	padding:0px 3px;
+	}
 textarea.amFlds{
-	font-size: 11px;
-	line-height: 13px;
-	width: 250px;
-	border: 1px solid #000;
-}
+	font-size:11px;
+	line-height:13px;
+	width:250px;
+	border:1px solid #000;
+	}
+
